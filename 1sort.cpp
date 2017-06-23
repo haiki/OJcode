@@ -16,7 +16,11 @@
 
 */
 #include<iostream>
+#include<algorithm>
 using namespace std;
+bool cmp(int x,int y){
+    return x>y;//定义的规则中，cmp表示第一个参数是否比第二个参数大，若是，则排在前面
+}
 int main()
 {
     int buff[100];
@@ -29,7 +33,7 @@ int main()
         {
             cin>>buff[k];
         }
-        sort(buff,buff+n);
+        sort(buff,buff+n,cmp);
         /*for(int i=0; i<n; i++)
         {
             if(!flag)
