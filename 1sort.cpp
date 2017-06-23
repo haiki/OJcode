@@ -29,7 +29,8 @@ int main()
         {
             cin>>buff[k];
         }
-        for(int i=0; i<n; i++)
+        sort(buff,buff+n);
+        /*for(int i=0; i<n; i++)
         {
             if(!flag)
             {
@@ -46,13 +47,12 @@ int main()
                     }
                 }
             }
-        }
+        }*/
         for(int i=0; i<n; i++)
         {
             cout<<buff[i]<<" ";
         }
         cout<<endl;
-        //cin>>n;
     }
     return 0;
 
