@@ -7,7 +7,7 @@ int main()
     int n;
     while(cin>>n&&n>=2&&n<=1000)
     {
-        if(q.empty()!=false)
+        while(q.empty()==false)//critical
             q.pop();
         for(int i=0;i<n;i++)
         {
