@@ -7,6 +7,8 @@ int main()
     int n;
     while(cin>>n&&n>=2&&n<=1000)
     {
+        if(q.empty()!=false)
+            q.pop();
         for(int i=0;i<n;i++)
         {
             int x;
